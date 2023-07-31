@@ -1,0 +1,16 @@
+{
+    "name":"Contest Details",
+    "description": " " ,
+    "version" : "1.0",
+    "manifest_version": 3,
+    "action":{
+      "default_popup" :"popup.html"
+    },
+    "icons":{
+      "16" : "/images/Calendar16.png",
+      "32" :"/images/Calendar.32.png",
+      "48" :"/images/Calendar.48.png",
+      "128":"/images/Calendar.64.png"
+  }
+}
+

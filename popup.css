@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tektur', cursive;
+  }
+body {
+    width: 350px;
+    background-color: #fff;
+    background: #fff4f4;
+    /* height: 160px; */
+}
+
+.header{
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  width: 96%;
+  color: #1c1712;
+  height: 40px;
+  margin: 5px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 0 2px #cba471 , 0 0.625em 0 0 #e0bf97;
+  background-color: #e6d7c3 ;
+}
+.header h2{
+    text-align: center;
+}
+.btn{
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color:#382b22;
+    text-transform: uppercase;
+    padding: 0.25rem 0.5rem;
+    background: #fffaf0;
+    border: 1px solid #b1a085;
+    border-radius: 0.55rem ;
+    transform-style: preserve-3d;
+    transition: transform 150ms cubic-bezier(0,0,0.58,1),background 150ms cubic-bezier(0,0,0.58,1);
+  }
+  .btn:hover{
+    background: #fff5e9;
+    transform: translate(0,0.25rem);
+  }
+  .btn:active{
+    background: #fff4e9;
+    transform: translate(0,0.55rem);
+  }
+  .btn::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    inset:0;
+    background: #f9d9c4;
+    border-radius: inherit;
+    box-shadow: 0 0 0 2px #b19e85 , 0 0.625em 0 0 #fff2e2;
+    transform: translate3d(0 , 0.75em , -1em);
+    transition: transform 150ms cubic-bezier(0,0,0.58,1),background 150ms cubic-bezier(0,0,0.58,1);
+  }
+  .btn:hover::before{
+    box-shadow: 0 0 0 2px #b19e85 , 0 0.625em 0 0 #fff2e2;
+    transform: translate3d(0 , 0.5em , -1em);
+  }
+  .btn:active::before{
+    .btn:hover::before{
+      box-shadow: 0 0 0 2px #b19e85 , 0 0.625em 0 0 #fff2e2;
+      transform: translate3d(0 , 0 , -1em);
+    }
+  }
+  .Filters{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 5px;
+    margin: 4px 4px;
+    grid-row-gap: 15px;
+    grid-column-gap: 10px;
+  }
+
+.site_list{
+    margin-top: 35px;
+    margin-left: 10px;
+    margin-right: 10px;
+    overflow-y: scroll;
+}
+.site_list ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: justify;
+    overflow-y: hidden;
+ } 
+.site_list ul li{
+    float: left;
+    font-size:1rem;
+    font-weight: 600;
+ } 
+ .site_list ul li input{ 
+    float: right;
+ } 
+ .site_list ul li input[type="checkbox"]:checked{
+    accent-color: green;
+ }
+
+ .date{
+  margin-top:25px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ }
+
+ .display{
+  background-color: white;
+  border: 2px dashed rgb(124, 70, 9);
+  margin: 3%;
+  padding: 5px 5px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+  font-weight: 550;
+  font-size: 0.92em;
+  width:80%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ }
+
+ #contest_name{
+  color: #3c7b2d;
+  font-size: 0.97em;
+  font-weight: 550;
+ }
+ #site_name{
+
+ } 
+ .register_btn{
+  float: right;
+  width: 30%;
+  height: 5vh;
+  border: none;
+  border-radius: 5px;
+  background-color: #e6c192;
+  box-shadow: 0 0.25em 0 0 #bc7218;
+  cursor: pointer;
+ }
+ .box{
+  display: flex;
+  /* flex-direction: column; */
+ }
+ .time{
+  width: 40px;
+  height: 5vh;
+  font-weight: 300;
+  font-size: 0.55em;
+ }
+ .verticalLine {
+  border-right: 4px solid #4b42f5;
+  height: 80px;
+}
+.time #strt{
+  text-align: right;
+  margin-bottom: 0px;
+  position:fixed;
+}
+
+ .register_btn:hover{
+  background:#bc7218;
+  box-shadow: 0 0.25em 0 0 #e6c192;
+  color: white;
+  transform: translate(0,0.25rem);
+ }
+ ::-webkit-scrollbar {
+  width: 0px;
+}
+
+.footer{
+  text-align: center;
+}
+
+/* .card-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-right:3px ;
+    width: 550px;
+    height: 80vh;
+}
+.platform-icon{
+    width: 150px;
+    height: 80px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 0.5s;
+}
+.platform-icon:hover{
+    width: 170px;
+    height: 85px;
+    box-shadow: rgb(244, 208, 175) 0px 5px 15px;
+} */
+
