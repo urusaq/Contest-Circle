@@ -77,10 +77,13 @@ body {
   }
   .Filters{
     display: grid;
+    grid-template-rows: 1fr;
+    padding: 3px 3px;
+    grid-row-gap: 20px;
+  }
+  .FiltersIN{
+    display: grid;
     grid-template-columns: auto auto;
-    margin-top: 5px;
-    margin: 4px 4px;
-    grid-row-gap: 15px;
     grid-column-gap: 10px;
   }
 
@@ -129,18 +132,34 @@ body {
   flex-direction: column;
   font-weight: 550;
   font-size: 0.92em;
-  width:80%;
+  width:90%;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
  }
-
  #contest_name{
   color: #3c7b2d;
   font-size: 0.97em;
-  font-weight: 550;
+  font-weight: 650;
+  float: left;
  }
- #site_name{
-
+ #site_name,#strt,#end{
+    font-size: 0.75rem;
+    font-weight: 580;
+    color:#d2994e
  } 
+ #site_name span{
+  color: #0b0e11;
+  font-weight: 600;
+ }
+ #strt span{
+  color: #3c7b2d;
+  font-size: 0.75rem;
+  font-weight: 600;
+ }
+ #end span{
+  color: #d12b15;
+  font-size: 0.75rem;
+  font-weight: 600;
+ }
  .register_btn{
   float: right;
   width: 30%;
@@ -151,25 +170,6 @@ body {
   box-shadow: 0 0.25em 0 0 #bc7218;
   cursor: pointer;
  }
- .box{
-  display: flex;
-  /* flex-direction: column; */
- }
- .time{
-  width: 40px;
-  height: 5vh;
-  font-weight: 300;
-  font-size: 0.55em;
- }
- .verticalLine {
-  border-right: 4px solid #4b42f5;
-  height: 80px;
-}
-.time #strt{
-  text-align: right;
-  margin-bottom: 0px;
-  position:fixed;
-}
 
  .register_btn:hover{
   background:#bc7218;
@@ -184,26 +184,3 @@ body {
 .footer{
   text-align: center;
 }
-
-/* .card-container{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-right:3px ;
-    width: 550px;
-    height: 80vh;
-}
-.platform-icon{
-    width: 150px;
-    height: 80px;
-    cursor: pointer;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    transition: 0.5s;
-}
-.platform-icon:hover{
-    width: 170px;
-    height: 85px;
-    box-shadow: rgb(244, 208, 175) 0px 5px 15px;
-} */
-
