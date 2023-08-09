@@ -137,18 +137,11 @@ function show_data(some_data) {
   function structure(ele)
   {
     return `
-    <div class = "box">
-    <div class="time">
-    <span id="strt">${format_time(ele.start_time)} </span>
-    <div class="verticalLine"></div>
-    <span id="end">${format_time(ele.end_time)}</span>
-    </div>
     <div class="display">
         <h2 id="contest_name">${ele.name} <a target="_blank" href="${ele.url}"><button class="register_btn">Register</button></a></h2>
-        <p id="site_name">Contest site :${(ele.site)}</p>
-        <span id="strt">Start Date :${get_date(ele.start_time)} </span>
-        <span id="end">End Date :${get_date(ele.end_time)}</span>
-    </div>
+        <p id="site_name">Contest site :<span>${(ele.site)}</span></p>
+        <span id="strt">Starts at :<span>${format_time(ele.start_time)} </span>on ${get_date(ele.start_time)} </span>
+        <span id="end">Ends at :<span>${format_time(ele.end_time)}</span> on ${get_date(ele.end_time)}</span>
     </div>
     `;
   }
